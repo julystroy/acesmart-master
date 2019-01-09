@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>acesmart</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Dosis:300,500&amp;text=Vue-ECharts">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<!--移动端调试工具-->
+<script src="//cdn.jsdelivr.net/npm/eruda"></script>
+<script>
+eruda.init();
+console.log('控制台打印信息');
+ console.log(native.postMessage(JSON.stringify({
+ method:"getNative",param:{
+ name:"qdq"
+ }
+ })))
+</script>
